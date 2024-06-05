@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+    --black: #101010;
+    --dark-gray: #151515;
+    --white: #f9f9f9;
+    --gray: #808080;
+    --gray-gradient: linear-gradient(90deg, rgba(26,26,26,1) 0%, rgba(21,21,21,1) 100%);
+    --green-gradient: linear-gradient(90deg, rgba(48,81,112,1) -100%, rgba(109,252,107,1) 100%);
+}
+
+#app {
+    display: flex;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 24px;
+}

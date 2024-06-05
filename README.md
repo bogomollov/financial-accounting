@@ -16,6 +16,11 @@ npm i
 composer i
 ```
 
+Запуск миграцию таблиц БД
+```sh
+php artisan migrate
+```
+
 Запуск Vite
 ```sh
 npm run dev

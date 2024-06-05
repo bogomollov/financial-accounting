@@ -1,7 +1,6 @@
 .phpunit.result.cache
 /.phpunit.cache
 /node_modules
-/vendor
 /public/build
 /public/hot
 /public/storage
