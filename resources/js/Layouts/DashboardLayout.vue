@@ -5,7 +5,10 @@ import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
 <template>
     <div class="home">
         <div class="home-wrapper">
-            <h1>Добро пожаловать, <span>{{ $page.props.auth.user.name }}</span></h1>
+            <div class="sm:flex home-title">
+                <h1>Добро пожаловать, <span id="username">{{ $page.props.auth.user.name }}</span></h1>
+                <AuthenticatedLayout></AuthenticatedLayout>
+            </div>
         </div>
     </div>
 </template>
@@ -23,7 +26,7 @@ import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
     gap: 40px;
     padding-top: 40px;
 }
-.home-wrapper span {
+#username {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;

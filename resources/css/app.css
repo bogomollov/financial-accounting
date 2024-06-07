@@ -11,10 +11,6 @@
     --green-gradient: linear-gradient(90deg, rgba(48,81,112,1) -100%, rgba(109,252,107,1) 100%);
 }
 
-#app {
-    display: flex;
-}
-
 h1 {
     font-size: 32px;
 }
