@@ -4,11 +4,10 @@
 <template>
     <div class="menu">
         <div class="menu-wrapper">
-            <h2>Меню</h2>
+            <h2 class="menu-title">Меню</h2>
             <div class="menu-items">
                 <div class="menu-item text-item">Домашняя страница</div>
                 <div class="menu-item text-item">История операций</div>
-                <div class="menu-item text-item">Задолженности</div>
                 <div class="menu-item text-item">Счета</div>
             </div>
         </div>
@@ -27,7 +26,7 @@
     flex-direction: column;
     gap: 40px;
     width: inherit;
-    padding-top: 40px;
+    padding-top: 50px;
 }
 .menu-items {
     display: flex;
@@ -36,7 +35,7 @@
 .menu-item {
     padding: 15px 0px;
 }
-.text-item, h2 {
+.text-item, .menu-title {
     padding-left: 40px;
 }
 .menu-item:hover {

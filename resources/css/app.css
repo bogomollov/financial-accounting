@@ -1,20 +1,56 @@
-@tailwind base;
-@tailwind components;
+/* @tailwind base;
+@tailwind components; */
 @tailwind utilities;
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font: inherit;
+}
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0px;
+}
 
 :root {
     --black: #101010;
     --dark-gray: #151515;
     --white: #f9f9f9;
     --gray: #808080;
+    --yellow: #ffbd2d;
+    --blue: #65cff6;
+    --purple: #b448c5;
+    --green: #6dfc6b;
+    --red: #fd3124;
     --gray-gradient: linear-gradient(90deg, rgba(26,26,26,1) 0%, rgba(21,21,21,1) 100%);
     --green-gradient: linear-gradient(90deg, rgba(48,81,112,1) -100%, rgba(109,252,107,1) 100%);
+    --p: 16px;
+    --small: 14px;
 }
 
 h1 {
     font-size: 32px;
+    font-weight: 500;
 }
 
 h2 {
     font-size: 24px;
+    font-weight: 500;
+}
+
+input {
+    border-radius: 10px;
+    border-color: transparent;
+    background-color: var(--dark-gray);
+    height: 50px;
+    padding-left: 10px;
+    color: var(--white);
+    font-size: 16px;
+    outline: none;
+}
+
+.form-quest a {
+    color: var(--white);
+    text-decoration: none;
 }

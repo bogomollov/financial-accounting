@@ -54,7 +54,7 @@ const submit = () => {
                 <InputError class="mt-2" :message="form.errors.name" />
             </div>
 
-            <div class="mt-4">
+            <div class="mt-5">
                 <InputLabel for="password" value="Пароль" />
 
                 <TextInput
@@ -69,23 +69,22 @@ const submit = () => {
                 <InputError class="mt-2" :message="form.errors.password" />
             </div>
 
-            <div class="block mt-4">
-                <label class="flex items-center">
+            <div class="block mt-5">
+                <label class="flex items-center label-checkbox">
                     <Checkbox name="remember" v-model:checked="form.remember" />
-                    <span class="ms-2 text-sm text-gray-600">Запомнить меня</span>
+                    <span class="ms-2">Запомнить меня</span>
                 </label>
             </div>
 
-            <div class="flex items-center justify-end mt-4">
+            <div class="flex items-center justify-end mt-5 form-quest">
                 <Link
-                    v-if="canResetPassword"
-                    :href="route('password.request')"
-                    class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                    :href="route('register')"
+                    class="focus:outline-none"
                 >
-                    Забыли пароль?
+                    Еще нету аккаунта?
                 </Link>
 
-                <PrimaryButton class="ms-4" :class="{ 'opacity-25': form.processing }" :disabled="form.processing">
+                <PrimaryButton class="ms-5" :class="{ 'opacity-25': form.processing }" :disabled="form.processing">
                     Войти в аккаунт
                 </PrimaryButton>
             </div>
