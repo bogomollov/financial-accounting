@@ -71,8 +71,8 @@ const maxWidthClass = computed(() => {
                     leave-from-class="opacity-100"
                     leave-to-class="opacity-0"
                 >
-                    <div v-show="show" class="fixed inset-0 transform transition-all" @click="close">
-                        <div class="absolute inset-0 bg-gray-500 opacity-75" />
+                    <div v-show="show" class="fixed inset-0 transform" @click="close">
+                        <div class="absolute inset-0 opacity-0" />
                     </div>
                 </Transition>
 
@@ -86,7 +86,7 @@ const maxWidthClass = computed(() => {
                 >
                     <div
                         v-show="show"
-                        class="mb-6 bg-white rounded-lg overflow-hidden shadow-xl transform transition-all sm:w-full sm:mx-auto"
+                        class="mb-6 rounded-lg overflow-hidden transform sm:w-full sm:mx-auto modal-window"
                         :class="maxWidthClass"
                     >
                         <slot v-if="show" />
@@ -96,3 +96,11 @@ const maxWidthClass = computed(() => {
         </Transition>
     </Teleport>
 </template>
+<style>
+.modal-window {
+    border: 1px solid var(--gray);
+}
+p {
+    color: var(--gray);
+}
+</style>

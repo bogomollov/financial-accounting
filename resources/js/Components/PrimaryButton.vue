@@ -10,5 +10,6 @@
         padding: 6px 12px;
         border-radius: 5px;
         font-size: var(--p);
+        font-weight: 500;
     }
 </style>

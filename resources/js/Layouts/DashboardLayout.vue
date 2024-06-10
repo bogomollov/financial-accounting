@@ -40,7 +40,8 @@ import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
                     </div>
                     <div class="block-border">
                         <div class="graph-analytics">
-                            <h2>График расходов и доходов</h2>
+                            <div class="graph-title">
+                                <h2>График расходов и доходов</h2>
                             <div class="designation">
                                 <div class="income">
                                     <div class="green-circle"></div>
@@ -51,6 +52,10 @@ import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
                                     Затраты
                                 </div>
                             </div>
+                            </div>
+                            <div>
+                                <img src="../../images/graph.svg">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -60,7 +65,7 @@ import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
                             <h2>Затраты за этот месяц</h2>
                             <div class="monthly-content">
                                 <div class="circle-diagram">
-                                    
+                                    <img src="../../images/circle.svg">
                                 </div>
                                 <div class="category-expenses">
                                     <div id="transfer" class="item-expenses">
@@ -149,6 +154,7 @@ import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
     padding: 40px 30px;
     background-color: var(--dark-gray);
     border-radius: 10px;
+    height: 100%;
 }
 .balances {
     display: flex;
@@ -178,6 +184,11 @@ import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
     gap: 30px;
 }
 .graph-analytics {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.graph-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -244,7 +255,6 @@ import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
 .monthly-content {
     display: flex;
     gap: 30px;
-    justify-content: space-between;
 }
 .category-expenses {
     display: flex;
