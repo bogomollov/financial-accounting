@@ -1,4 +1,5 @@
 <script setup>
+import { Link } from '@inertiajs/vue3';
 </script>
 
 <template>
@@ -6,9 +7,9 @@
         <div class="menu-wrapper">
             <h2 class="menu-title">Меню</h2>
             <div class="menu-items">
-                <div class="menu-item text-item">Домашняя страница</div>
-                <div class="menu-item text-item">История операций</div>
-                <div class="menu-item text-item">Счета</div>
+                <Link :href="route('dashboard')" class="menu-item text-item">Домашняя страница</Link>
+                <Link :href="route('history')" class="menu-item text-item">История операций</Link>
+                <Link :href="route('bill')" class="menu-item text-item">Счета</Link>
             </div>
         </div>
     </div>
@@ -31,6 +32,10 @@
 .menu-items {
     display: flex;
     flex-direction: column;
+}
+.menu-items a {
+    text-decoration: none;
+    color: var(--white);
 }
 .menu-item {
     padding: 15px 0px;
