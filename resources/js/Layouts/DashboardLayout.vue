@@ -177,6 +177,9 @@ import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
 .bal-amount {
     font-weight: 500;
 }
+.block-1 {
+    width: 100%;
+}
 .block-1,
 .block-2 {
     display: flex;

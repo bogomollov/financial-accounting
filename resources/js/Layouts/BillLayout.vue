@@ -67,7 +67,7 @@ import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
 <style>
 .bills {
     display: flex;
-    gap: 40px;
+    gap: 45px;
 }
 .bill-card {
     background-image: url(../../images/card-mask.png);
