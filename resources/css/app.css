@@ -8,6 +8,10 @@ body {
     font: inherit;
 }
 
+#app {
+    overflow: hidden;
+}
+
 *, ::before, ::after {
     box-sizing: border-box;
     margin: 0px;
